@@ -50,7 +50,9 @@
 
     
     #logo{
-        height: 52px;
+        height: 42px;
+        margin-right: 2vw;
+      transition: all 0.5s ease;
     }
 
     &__nav-menu {
@@ -91,11 +93,6 @@
   }
 }
 
-   #logo{
-        margin-right: 9vw;
-        transition: 2s;
-    }
-
 }
 
 }
@@ -133,7 +130,7 @@
       left: auto;      
       color: whitesmoke;
       position: inherit;
-      margin-right: 10vw;
+      font-size: x-large;
 
   }
 
@@ -152,6 +149,9 @@
    transition: 2s;
  }
 
+ #logo {
+   margin-right: 3vw;
+ }
 
 }
 }

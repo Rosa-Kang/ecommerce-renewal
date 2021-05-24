@@ -71,7 +71,10 @@
 }
 
 .header--container #logo {
-  height: 52px;
+  height: 42px;
+  margin-right: 2vw;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .header--container__nav-menu {
@@ -115,12 +118,6 @@
   display: table;
 }
 
-.header--container #logo {
-  margin-right: 9vw;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
 @media screen and (min-width: 768px) {
   .header--container {
     padding: 15px 24px;
@@ -160,7 +157,7 @@
     left: auto;
     color: whitesmoke;
     position: inherit;
-    margin-right: 10vw;
+    font-size: x-large;
   }
   .header--container__nav-item {
     margin-right: 30px;
@@ -175,6 +172,9 @@
     color: #545454;
     -webkit-transition: 2s;
     transition: 2s;
+  }
+  .header--container #logo {
+    margin-right: 3vw;
   }
 }
 
