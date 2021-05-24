@@ -23,25 +23,25 @@ function Nav() {
   window.addEventListener('scroll', changeBackground);
 
     return (
-        <header className={bg ? 'header white' : 'header'}>
+        <header className={bg || click ? 'header white' : 'header'}>
         <div className='header--container'>
           <div className='header--container__logo'>  
            <Link to='/' className='header--logo' onClick={closeMobileMenu}>
-             <img id='logo' src={bg ? logoG : logoT} alt="effortless-logo"/>
+             <img id='logo' src={bg || click ? logoG : logoT} alt="effortless-logo"/>
           </Link>
           </div>
           <div className={bg ? 'menu-bar':'menu-icon'} onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
         <ul className={click ? 'header--container__nav-menu active' : 'header--container__nav-menu'}>
-            <li className='header--container__nav-item'>
+            <li className={bg ? 'header--container__nav-item black ' : 'header--container__nav-item'}>
               <Link to='/' 
               className='header--container__nav-item__nav-links' 
               onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className='header--container__nav-item'>
+            <li className={bg ? 'header--container__nav-item black ' : 'header--container__nav-item'}>
               <Link
                 to='/shop'
                 className='header--container__nav-item__nav-links'
@@ -50,7 +50,7 @@ function Nav() {
                 Shop
               </Link>
             </li>
-            <li className='header--container__nav-item'>
+            <li className={bg ? 'header--container__nav-item black ' : 'header--container__nav-item'}>
               <Link
                 to='/news'
                 className='header--container__nav-item__nav-links'
@@ -60,7 +60,7 @@ function Nav() {
               </Link>
             </li>
 
-            <li className='header--container__nav-item'>
+            <li className={bg ? 'header--container__nav-item black ' : 'header--container__nav-item'}>
               <Link
                 to='/contact'
                 className='header--container__nav-item__nav-links'
@@ -71,8 +71,8 @@ function Nav() {
             </li>
           </ul>
           <div className='header--container__right'>  
-          <i className="fas fa-search"></i>
-          <i className="fas fa-shopping-cart"></i>
+          <i className={bg ? "fas fa-search black" : "fas fa-search"}></i>
+          <i className={bg ? "fas fa-shopping-cart black" :"fas fa-shopping-cart"}></i>
           </div>
           </div>
         </header>

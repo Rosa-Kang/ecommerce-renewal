@@ -66,7 +66,7 @@
 }
 
 .header--container .fa-times {
-  color: #fff;
+  color: #545454;
   font-size: 1.8rem;
 }
 
@@ -113,6 +113,12 @@
   padding: 1rem;
   width: 100%;
   display: table;
+}
+
+.header--container #logo {
+  margin-right: 9vw;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -164,6 +170,11 @@
     text-decoration: none;
     color: inherit;
     padding: 0;
+  }
+  .header--container .black {
+    color: #545454;
+    -webkit-transition: 2s;
+    transition: 2s;
   }
 }
 

@@ -43,7 +43,7 @@
     }
     
     .fa-times {
-    color: #fff;
+    color: #545454;
     font-size: 1.8rem;
   }
 
@@ -90,6 +90,11 @@
     display: table;
   }
 }
+
+   #logo{
+        margin-right: 9vw;
+        transition: 2s;
+    }
 
 }
 
@@ -141,6 +146,13 @@
       padding: 0;
     }   
   }
+
+   .black {
+   color: #545454;
+   transition: 2s;
+ }
+
+
 }
 }
 
