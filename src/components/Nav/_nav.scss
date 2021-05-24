@@ -99,7 +99,7 @@
 .header {
   &--container{
     padding: 15px 24px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     &__left{
         display: flex;
         color: whitesmoke;
@@ -121,17 +121,24 @@
     }
 
     &__nav-menu {
-          position: inherit;
       flex-direction: row;
-      left: 0;
+      width: auto;
+      height: auto;
+      top: auto;
+      left: auto;      
       color: whitesmoke;
-      justify-content: center;
+      position: inherit;
+      margin-right: 10vw;
+
   }
 
   &__nav-item{
+    margin-right: 30px;
+    list-style-type: none;
     &__nav-links{
       text-decoration: none;
       color: inherit;
+      padding: 0;
     }   
   }
 }

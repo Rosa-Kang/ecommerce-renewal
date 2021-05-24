@@ -118,9 +118,9 @@
 @media screen and (min-width: 768px) {
   .header--container {
     padding: 15px 24px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .header--container__left {
     display: -webkit-box;
@@ -144,20 +144,26 @@
     display: none;
   }
   .header--container__nav-menu {
-    position: inherit;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    left: 0;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
     color: whitesmoke;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    position: inherit;
+    margin-right: 10vw;
+  }
+  .header--container__nav-item {
+    margin-right: 30px;
+    list-style-type: none;
   }
   .header--container__nav-item__nav-links {
     text-decoration: none;
     color: inherit;
+    padding: 0;
   }
 }
 
