@@ -1,0 +1,124 @@
+.footer {
+  background-position-x: right;
+  background-position-y: center;
+  background-image: url(https://cdn.shopify.com/s/files/1/0081/5654/5088/files/news-tall_3000x.jpg?v=1556134325);
+  background-size: cover;
+  color: #545454;
+  padding: 40px 0px;
+  margin-top: 309px;
+
+  &__myfooter {
+    &--title {
+      margin: 0px 16px 24px 16px;
+    }
+    &--images {
+        margin: 0 16px;
+        .fab {
+            color: #545454;
+            margin-right: 10px;
+        }
+    }
+  }
+
+  &__text {
+    margin: 32px 16px 24px 16px;
+    font-size: 0.9em;
+    a {
+      text-decoration: none;
+      color: #545454;
+    }
+    #thick {
+      font-family: myDemi;
+      margin: 1em 0em;
+    }
+    #slim {
+      margin: 1em 0em;
+    }
+  }
+  .copyright {
+    margin: 32px 16px 24px 12px;
+    width: 67%;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__myfooter--logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 0px 0px 40px 0px;
+    &__myfooter {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 24px;
+      margin-right: 24px;
+
+      &--title {
+        display: none;
+      }
+      &--images {
+        padding-right: 81px;
+        .fab {
+          padding: 22px 0px 0px 16px;
+          height: 24px;
+        }
+      }
+      &--logo {
+        img {
+          justify-self: flex-end;
+              height: 58px;
+          margin-top: 0px;
+          padding: 20px 0px 0px 0px;
+          margin-left: auto;
+        }
+      }
+    }
+
+    &__text {
+      display: flex;
+      justify-content: start;
+      margin: 24px;
+      &--left {
+        margin-right: 89px;
+        margin-left: 8px;
+      }
+    }
+    .copyright {
+      margin: 24px;
+      width: 69%;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    &__myfooter {
+      margin: 0px 180px;
+      .fab {
+        margin-left: 16px;
+      }
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      width: 53%;
+      margin: 32px 180px 24px 180px;
+
+      #thick {
+        margin: 16px 0px;
+      }
+      #slim {
+        margin: 16px 0px 16px 0px;
+      }
+    }
+    .copyright {
+      margin: 24px 0px 0px 180px;
+      width: 69%;
+    }
+  }
+}

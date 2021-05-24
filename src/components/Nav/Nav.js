@@ -1,32 +1,45 @@
-import React, {useState} from 'react';
+import React, {useState } from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../../assets/logo/effortless.png';
+import logoG from '../../assets/logo/sc-effort.png';
+import logoT from '../../assets/logo/effortless.png'
+
 
 
 function Nav() {
-   const {click, setClick} = useState(false);
+   const [click, setClick] = useState(false);
+   const [bg, setBg] = useState(false);
 
-   const handleClick = () => setClick(!click);
-   const closeMobileMenu = () => setClick(false);
-  
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+   
+   const changeBackground =() => {
+    if(window.scrollY >= 80) {
+        setBg(true)
+    } else {
+       setBg(false)
+    }
+  };
+
+  window.addEventListener('scroll', changeBackground);
+
     return (
-        <div className="header">
-        <div className="header--container">
+        <div className={bg ? 'header white' : 'header'}>
+        <div className='header--container'>
           <div className='header--container__left'>            
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-pinterest"></i>
+            <i className="fab fa-instagram"></i>
+            <i className="fab fa-pinterest"></i>
           </div>
           <div className='header--container__logo'>  
            <Link to='/' className='header--logo' onClick={closeMobileMenu}>
-             <img id='logo' src={logo} alt="effortless-logo"/>
+             <img id='logo' src={bg ? logoG : logoT} alt="effortless-logo"/>
           </Link>
           </div>
-          <div className='menu-icon' onClick={handleClick}>
+          <div className={bg ? 'menu-bar':'menu-icon'} onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <div className='header--container__right'>  
-          <i class="fas fa-search"></i>
-          <i class="fas fa-shopping-cart"></i>
+          <i className="fas fa-search"></i>
+          <i className="fas fa-shopping-cart"></i>
           </div>
         </div>
         <ul className={click ? 'header--container__nav-menu active' : 'header--container__nav-menu'}>

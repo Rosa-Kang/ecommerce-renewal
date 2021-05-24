@@ -1,20 +1,94 @@
 .header {
-    &--container{
-    
+    position: fixed;
+    width: 100%;
+    top: 0;
+   &.white {
+       transition: 2s;
+       background-color: whitesmoke;
+   }
+    &--container {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 15px;
+    color: #545454;
+    
+    .menu-icon {
+        color:whitesmoke;
+            display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    }
+
+    .menu-bar {
+        color: #545454;
+        display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    }
+      .fa-times {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+    &__left{
+        display: none;
+    }
+    &__right{
+        display: none;
+    }
     
     #logo{
-        height: 48px;
+        height: 52px;
     }
 
     &__nav-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
         list-style-type: none;
     }
+
+    &__nav-menu.active {
+    background: whitesmoke;
+    color: #545454;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+   &__nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  &__nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+
 }
 
 }
+
+// @media screen and (min-width: 960px) {
+
+// }
