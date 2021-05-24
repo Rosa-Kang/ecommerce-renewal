@@ -1,0 +1,20 @@
+.header {
+    &--container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    #logo{
+        height: 48px;
+    }
+
+    &__nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+}
+
+}

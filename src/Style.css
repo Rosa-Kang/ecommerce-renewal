@@ -1,0 +1,44 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  letter-spacing: 0.5px;
+}
+
+.header--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header--container #logo {
+  height: 48px;
+}
+
+.header--container__nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.hero {
+  background-image: url("https://cdn.shopify.com/s/files/1/0081/5654/5088/files/dots_1440x.jpg?v=1543973418%22%20alt=%22Hand%20Fabricated%22%20class=%22responsive-wide-image%22");
+  height: 822px;
+  background-position: right 50% bottom 52%;
+}
+/*# sourceMappingURL=Style.css.map */
