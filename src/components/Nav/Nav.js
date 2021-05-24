@@ -23,7 +23,7 @@ function Nav() {
   window.addEventListener('scroll', changeBackground);
 
     return (
-        <div className={bg ? 'header white' : 'header'}>
+        <header className={bg ? 'header white' : 'header'}>
         <div className='header--container'>
           <div className='header--container__left'>            
             <i className="fab fa-instagram"></i>
@@ -44,14 +44,16 @@ function Nav() {
         </div>
         <ul className={click ? 'header--container__nav-menu active' : 'header--container__nav-menu'}>
             <li className='header--container__nav-item'>
-              <Link to='/' className='header--container__nav-links' onClick={closeMobileMenu}>
+              <Link to='/' 
+              className='header--container__nav-item__nav-links' 
+              onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
             <li className='header--container__nav-item'>
               <Link
-                to='/services'
-                className='header--container__nav-links'
+                to='/shop'
+                className='header--container__nav-item__nav-links'
                 onClick={closeMobileMenu}
               >
                 Shop
@@ -59,25 +61,25 @@ function Nav() {
             </li>
             <li className='header--container__nav-item'>
               <Link
-                to='/products'
-                className='header--container__nav-links'
+                to='/news'
+                className='header--container__nav-item__nav-links'
                 onClick={closeMobileMenu}
               >
                 News
               </Link>
             </li>
 
-            <li>
+            <li className='header--container__nav-item'>
               <Link
-                to='/sign-up'
-                className='header--container__nav-links-mobile'
+                to='/contact'
+                className='header--container__nav-item__nav-links'
                 onClick={closeMobileMenu}
               >
                 Contact
               </Link>
             </li>
           </ul>
-        </div>
+        </header>
     )
 }
 
