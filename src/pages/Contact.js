@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
+import ContactComp from '../components/Contact/Contactcomp';
 
 function Contact() {
     return (
-        <div>
-            <h1>Contact</h1>
-        </div>
+      <ContactComp />
     )
 }
 
