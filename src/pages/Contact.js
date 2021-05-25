@@ -1,9 +1,16 @@
 import React from 'react';
-import ContactComp from '../components/Contact/Contactcomp';
+import ContactComp from '../components/Contact/ContactComp';
+import Header from '../components/Nav/Nav2';
+import Footer from '../components/Footer/Footer';
+
 
 function Contact() {
-    return (
+    return ( 
+      <>
+      <Header />
       <ContactComp />
+      <Footer />
+      </>
     )
 }
 
