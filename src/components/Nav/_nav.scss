@@ -102,7 +102,7 @@
   &--container{
     padding: 15px 24px;
     justify-content: space-between;
-    margin: 0px 180px;
+    margin: 0px 10px;
     &__left{
         display: flex;
         color: whitesmoke;
@@ -157,4 +157,13 @@
 }
 }
 
+}
+
+
+@media screen and (min-width: 1024px) {
+.header {
+  &--container{
+    margin: 0px 180px;
+  }
+}
 }

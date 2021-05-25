@@ -26,6 +26,7 @@ export default class NewsP extends Component {
     });
   }
 
+
   render() {
     return (
       <>
@@ -33,16 +34,16 @@ export default class NewsP extends Component {
           <h1 className="newsNav--title">News</h1>
           <ul className="newsNav--list">
             <li>
-              <a href="all-article">All</a>
+              <a href="/">All</a>
             </li>
             <li>
-              <a href="process">Our Process</a>
+              <a href="/">Our Process</a>
             </li>
             <li>
-              <a href="sustaining">Sustainability</a>
+              <a href="/">Sustainability</a>
             </li>
             <li>
-              <a href="travel">Travel</a>
+              <a href="/">Travel</a>
             </li>
           </ul>
         </div>

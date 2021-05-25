@@ -7,6 +7,7 @@ function Categories() {
           <a className="categories__box--img" href="/shop">
             <img
               alt="earinginct"
+              loading="lazy"
               src="https://cdn.shopify.com/s/files/1/0081/5654/5088/collections/earrings_1950x.jpg?v=1543981431"
             />
           </a>
@@ -18,6 +19,7 @@ function Categories() {
           <a className="categories__box--img" href="/shop">
             <img
               alt="neckct"
+              loading="lazy"
               src="https://cdn.shopify.com/s/files/1/0081/5654/5088/collections/necklaces_1950x.jpg?v=1543981732"
             />
           </a>
@@ -29,6 +31,7 @@ function Categories() {
           <a className="categories__box--img" href="/shop">
             <img
               alt="ringinct"
+              loading="lazy"
               src="https://cdn.shopify.com/s/files/1/0081/5654/5088/collections/rings_1950x.jpg?v=1543980851"
             />
           </a>
