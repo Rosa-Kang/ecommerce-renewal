@@ -121,9 +121,10 @@
 @media screen and (min-width: 768px) {
   .header--container {
     padding: 15px 24px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0px 180px;
   }
   .header--container__left {
     display: -webkit-box;
@@ -181,7 +182,7 @@
 .hero {
   background-image: url("https://cdn.shopify.com/s/files/1/0081/5654/5088/files/dots_1440x.jpg?v=1543973418%22%20alt=%22Hand%20Fabricated%22%20class=%22responsive-wide-image%22");
   height: 822px;
-  background-position: right 44% bottom 52%;
+  background-position: center center;
 }
 
 .footer {
@@ -191,7 +192,10 @@
   background-size: cover;
   color: #545454;
   padding: 40px 0px;
-  margin-top: 309px;
+}
+
+.footer__space {
+  padding: 2vw 0vw;
 }
 
 .footer__myfooter--title {
@@ -253,8 +257,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding: 7vw 0vw 4vw;
   }
   .footer__myfooter--title {
     display: none;
@@ -270,8 +273,8 @@
     justify-self: flex-end;
     height: 58px;
     margin-top: 0px;
-    padding: 20px 0px 0px 0px;
     margin-left: auto;
+    padding-top: 15px;
   }
   .footer__text {
     display: -webkit-box;

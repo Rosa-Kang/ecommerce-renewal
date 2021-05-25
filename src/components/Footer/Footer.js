@@ -21,7 +21,7 @@ function Footer() {
             </a>
           </div>
         </div>
-
+        <div className="footer__space"></div>
         <div className="footer__text">
           <div className="footer__text--left">
             <div id="thick">

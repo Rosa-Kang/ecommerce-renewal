@@ -5,7 +5,10 @@
   background-size: cover;
   color: #545454;
   padding: 40px 0px;
-  margin-top: 309px;
+
+  &__space{
+    padding: 2vw 0vw;
+  }
 
   &__myfooter {
     &--title {
@@ -55,8 +58,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-left: 24px;
-      margin-right: 24px;
+      padding: 7vw 0vw 4vw;
 
       &--title {
         display: none;
@@ -73,8 +75,8 @@
           justify-self: flex-end;
               height: 58px;
           margin-top: 0px;
-          padding: 20px 0px 0px 0px;
           margin-left: auto;
+          padding-top: 15px;
         }
       }
     }

@@ -101,7 +101,8 @@
 .header {
   &--container{
     padding: 15px 24px;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0px 180px;
     &__left{
         display: flex;
         color: whitesmoke;
