@@ -1,0 +1,32 @@
+.common-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  .earings {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+    &__thumb {
+      transition: background-color 4s ease-in-out 1s;
+      img {
+        width: 99%;
+        height: 500px;
+      }
+    }
+
+    &__thumb:hover {
+      background: #d2d4d6;
+    }
+
+    &__text {
+      padding: 20px 0px;
+      h5 {
+        font-weight: 400;
+        margin: 0px;
+        padding: 0px 0px 10px 0px;
+      }
+    }
+  }
+}

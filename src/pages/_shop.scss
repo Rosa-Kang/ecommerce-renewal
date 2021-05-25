@@ -1,0 +1,56 @@
+.shop {
+  .ReactStickyHeader_root {
+    box-sizing: inherit;
+  }
+  .ReactStickyHeader_root * {
+    box-sizing: inherit;
+  }
+  #earing {
+    padding-top: 190px;
+  }
+  &__box {
+    font-family: "Century Gothic", sans-serif;
+    &--text {
+      color: #545454;
+      background-color: #f5eddc;
+      padding: 40px;
+      width: 100%;
+      #view {
+        font-weight: 400;
+        text-transform: uppercase;
+        border: 1px solid #545454;
+        width: 35%;
+        text-align: center;
+        padding: 10px 0px;
+      }
+    }
+    &--img {
+      img {
+        height: 44vw;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and(min-width: 768px) {
+  .shop {
+    &__box {
+      display: flex;
+      #view {
+        width: 40%;
+      }
+      &--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      &--img {
+        img {
+          height: 34vw;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
