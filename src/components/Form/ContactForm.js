@@ -1,7 +1,7 @@
 import React from 'react';
 import footage from '../../assets/img/footage.jpg';
 
-function ContactComp() {
+function ContactForm() {
     return (
         <div className="contact">
         <h3>Contact</h3>
@@ -41,4 +41,4 @@ function ContactComp() {
     )
 }
 
-export default ContactComp;
+export default ContactForm;
