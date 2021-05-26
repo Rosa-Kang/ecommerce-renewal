@@ -821,7 +821,7 @@
   padding: 15px 28px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   .collection__One {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -836,9 +836,6 @@
     min-height: 400px;
     width: 50%;
   }
-  .collection__One--link--type {
-    padding-top: 42%;
-  }
   .collection__Two {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -852,9 +849,6 @@
   .collection__Two—-link {
     min-height: 400px;
     width: 50%;
-  }
-  .collection__Two—-link--type {
-    padding-top: 42%;
   }
 }
 
