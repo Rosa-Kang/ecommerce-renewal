@@ -6,6 +6,11 @@
         height: 318px;
         object-fit: cover;
         object-position: center;
+        // transition-delay: 2s;
+        // visibility: visible;
+        // opacity: 1;
+        // transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+        // transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
       }
     }
     &--text {
