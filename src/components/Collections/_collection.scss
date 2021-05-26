@@ -108,7 +108,7 @@
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   .collection {
     &__One {
       flex-direction: row;
@@ -119,9 +119,6 @@
       &--link {
         min-height: 400px;
         width: 50%;
-        &--type {
-          padding-top: 42%;
-        }
       }
     }
 
@@ -134,10 +131,7 @@
       &—-link {
         min-height: 400px;
         width: 50%;
-        &--type {
-          padding-top: 42%;
-        }
-      }
+       }
     }
   }
 }
