@@ -7,10 +7,13 @@ import logoT from '../../assets/logo/effortless.png'
 
 function Nav() {
    const [click, setClick] = useState(false);
+   const [search, setSearch] = useState(false);
    const [bg, setBg] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const handleChange = () => setSearch(!search);
+  const cartClick =() => setSearch(false);
    
    const changeBackground =() => {
     if(window.scrollY >= 80) {
@@ -70,9 +73,12 @@ function Nav() {
               </Link>
             </li>
           </ul>
-          <div className='header--container__right'>  
-          <i className={bg ? "fas fa-search black" : "fas fa-search"}></i>
-          <i className={bg ? "fas fa-shopping-cart black" :"fas fa-shopping-cart"}></i>
+          <div className='header--container__right'>
+          {
+            search&& <input className='header--container__right--searchBar' placeholder='search' type='text' />
+          }
+          <i className={bg ? "fas fa-search black" : "fas fa-search"} onClick={handleChange}></i>
+          <i className={bg ? "fas fa-shopping-cart black" :"fas fa-shopping-cart"} onClick={cartClick}></i>
           </div>
           </div>
         </header>
