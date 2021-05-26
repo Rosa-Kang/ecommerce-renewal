@@ -491,6 +491,7 @@
 
 .shop__box {
   font-family: "Century Gothic", sans-serif;
+  padding-top: 13vw;
 }
 
 .shop__box--text {
@@ -498,14 +499,28 @@
   background-color: #f5eddc;
   padding: 40px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .shop__box--text #view {
   font-weight: 400;
   text-transform: uppercase;
   border: 1px solid #545454;
-  width: 35%;
+  width: 100%;
   text-align: center;
+  margin-top: 15px;
   padding: 10px 0px;
 }
 
@@ -519,9 +534,10 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 6vw;
   }
   .shop__box #view {
-    width: 40%;
+    width: 100%;
   }
   .shop__box--text {
     display: -webkit-box;
@@ -538,6 +554,15 @@
   .shop__box--img img {
     height: 34vw;
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .shop__box {
+    padding-top: 0vw;
+  }
+  .shop #view {
+    width: 60%;
   }
 }
 
@@ -755,10 +780,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
@@ -784,8 +809,12 @@
   height: 500px;
 }
 
-.common-box .earings__thumb:hover {
+.common-box .earings__thumb img:hover {
   background: #d2d4d6;
+  opacity: 1.0;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
 }
 
 .common-box .earings__text {
@@ -796,6 +825,19 @@
   font-weight: 400;
   margin: 0px;
   padding: 0px 0px 10px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .common-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
 }
 
 .newsNav {
