@@ -8,6 +8,21 @@
   letter-spacing: 0.5px;
 }
 
+* .reveal {
+  position: relative;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+* .reveal.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -74,8 +89,6 @@
 .header--container #logo {
   height: 42px;
   margin-right: 2vw;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .header--container__nav-menu {
@@ -156,6 +169,8 @@
     transition: all 1s ease;
     color: #545454;
     border: solid 1px #f5f5f5;
+    -webkit-transition: width 2s transform 2s;
+    transition: width 2s transform 2s;
   }
   .header--container__right input:focus {
     outline: none;
@@ -639,28 +654,51 @@
 }
 
 .collection__One--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f7f9fa;
   min-height: 300px;
   padding: 50px;
 }
 
-.collection__One--text--type {
-  margin-top: 30%;
-}
-
 .collection__One--text--type h2,
 .collection__One--text--type p {
+  margin-top: 2vw;
   text-align: center;
   color: #282c2e;
 }
 
 .collection__One--link {
   width: 100%;
-  height: 24%;
+  min-height: 300px;
   background-image: url(https://cdn.shopify.com/s/files/1/0081/5654/5088/files/bluedot_1512x.jpg?v=1543973451);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .collection__One--link--type {
@@ -710,28 +748,51 @@
 }
 
 .collection__Two—-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f7f9fa;
   min-height: 300px;
   padding: 50px;
 }
 
-.collection__Two—-text--type {
-  margin-top: 30%;
-}
-
 .collection__Two—-text--type h2,
 .collection__Two—-text--type p {
+  margin-top: 2vw;
   text-align: center;
   color: #282c2e;
 }
 
 .collection__Two—-link {
   width: 100%;
-  height: 24%;
+  min-height: 300px;
   background-image: url(https://cdn.shopify.com/s/files/1/0081/5654/5088/files/blazer2_1512x.jpg?v=1543973460);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .collection__Two—-link--type {
@@ -806,6 +867,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+          transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  -webkit-transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s, -webkit-transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
 
 .common-box .earings {
