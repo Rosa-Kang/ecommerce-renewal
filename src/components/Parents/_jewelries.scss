@@ -1,7 +1,8 @@
 .common-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
+  
   .earings {
     display: flex;
     flex-direction: column;
@@ -13,12 +14,15 @@
       img {
         width: 99%;
         height: 500px;
-      }
-    }
-
-    &__thumb:hover {
-      background: #d2d4d6;
-    }
+      }      
+      img:hover {
+        background: #d2d4d6;
+        opacity: 1.0;
+        transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -webkit-transition: opacity .55s ease-in-out;
+        }
+  }
 
     &__text {
       padding: 20px 0px;
@@ -28,5 +32,13 @@
         padding: 0px 0px 10px 0px;
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .common-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   }
 }
