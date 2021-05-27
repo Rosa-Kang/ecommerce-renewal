@@ -53,6 +53,14 @@
         font-size: 1.15em;
         line-height: 1;
       }
+
+      a{
+        text-decoration: none;
+      }
+
+      a:focus {
+        cursor: pointer;
+      }
     }
   }
 }

@@ -12,18 +12,15 @@
     width: 100%;
 
     &__thumb {
-      transition: background-color 4s ease-in-out 1s;
       img {
         width: 99%;
         height: 500px;
-      }      
-      img:hover {
-        background: #d2d4d6;
-        opacity: 1.0;
-        transition: opacity .55s ease-in-out;
-        -moz-transition: opacity .55s ease-in-out;
-        -webkit-transition: opacity .55s ease-in-out;
-        }
+        opacity: 0.7;
+        transition: all .5s ease-in-out;
+      }     
+      img:hover{
+        opacity: 1;
+      } 
   }
 
     &__text {

@@ -12,7 +12,7 @@ export default class News extends Component {
             {this.props.meta} <span>By {this.props.author}</span>
           </h3>
           <p className="news__one--text--excerpt">{this.props.summary}</p>
-          <p className="news__one--text--arrow">Read more →</p>
+          <p className="news__one--text--arrow">Read more<a href="/">→</a></p>
         </div>
       </div>
     )}

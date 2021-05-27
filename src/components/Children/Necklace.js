@@ -25,7 +25,7 @@ export default class Necklaces extends Component {
   render() {
     return (
       <div className="earings">
-        <a className="earings__thumb" href="/collections/earings">
+        <a className="earings__thumb" href="/shop">
           <img
             alt="memo"
             onMouseOver={this.handleMouseOver}

@@ -14,7 +14,7 @@ function Shop() {
             <h4>Earings</h4>
             <h5 id="view">View Collection</h5>
           </div>
-          <a className="shop__box--img" href="/collections/earings">
+          <a className="shop__box--img" href="/shop">
             <img
               alt="earing"
               src="https://cdn.shopify.com/s/files/1/0081/5654/5088/collections/earrings_1950x.jpg?v=1543981431"
@@ -27,7 +27,7 @@ function Shop() {
             <h4>Necklaces</h4>
             <h5 id="view">View Collection</h5>
           </div>
-          <a className="shop__box--img" href="/collections/necklaces">
+          <a className="shop__box--img" href="/shop">
             <img
               alt="second"
               src="https://cdn.shopify.com/s/files/1/0081/5654/5088/collections/necklaces_1950x.jpg?v=1543981732"
@@ -40,7 +40,7 @@ function Shop() {
             <h4>Rings</h4>
             <h5 id="view">View Collection</h5>
           </div>
-          <a className="shop__box--img" href="/collections/rings">
+          <a className="shop__box--img" href="/shop">
             <img
               alt="rings"
               src="https://cdn.shopify.com/s/files/1/0081/5654/5088/collections/rings_1950x.jpg?v=1543980851"
